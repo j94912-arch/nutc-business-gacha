@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>國立臺中科技大學商學院線上扭蛋機</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="title-area">
+        <img src="assets/nutc-logo.png" class="school-logo" alt="中科大校徽">
+        <div>
+            <h1>國立臺中科技大學商學院</h1>
+            <h2 class="page-title">線上扭蛋體驗</h2>
+        </div>
+    </div>
+
+    <p class="subtitle">轉出你的未來｜探索八大科系學長姐的真實分享</p>
+
+    <div class="gacha-area">
+        <img src="assets/gacha-machine.png" class="machine-img" alt="扭蛋機">
+
+        <button onclick="drawGacha()">開始扭蛋</button>
+
+        <p class="data-note">目前已收錄 400 則學長姐分享</p>
+
+        <div id="dropBall" class="drop-ball"></div>
+    </div>
+
+</div>
+
+<div id="modal" class="modal hidden">
+    <div class="modal-card">
+        <button class="close-btn" onclick="closeModal()">×</button>
+        <div id="result"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
